@@ -5,7 +5,7 @@ WORKDIR /api
 COPY package*.json /api/
 
 # use 'RUN' to execute commands in the container's bash terminal
-RUN apt-get update && apt-get upgrade -y && \
+RUN apt-get update && apt-get upgrade -y && apt-get install  \
     apt-get install -y nodejs \
     npm      
 
