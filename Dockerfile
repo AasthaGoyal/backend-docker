@@ -16,4 +16,4 @@ COPY . /api/
 # expose MongoDB's default port of 27017
 EXPOSE 27017
 
-CMD ["node", "/bin/www"]
+CMD ["node", "./bin/www"]

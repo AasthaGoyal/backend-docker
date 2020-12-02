@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-pod   
+spec:
+  containers:
+    - image: integration1234/node-backend
+      name: node-container
+      ports:
+        - containerPort: 5000
+          protocol:  TCP
